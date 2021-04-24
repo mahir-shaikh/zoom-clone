@@ -1,0 +1,8 @@
+
+# dependencies
+zoom-clone-client/node_modules/*
+zoom-clone-server/node_modules/*
+
+# compiled output
+zoom-clone-client/dist
+zoom-clone-server/dist
