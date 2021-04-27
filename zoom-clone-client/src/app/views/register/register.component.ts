@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-register',
+  selector: 'zc-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.styl']
 })

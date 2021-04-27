@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent, RegisterComponent, HomeComponent, CallComponent } from './views';
+import { LoginComponent, RegisterComponent, HomeComponent, RoomComponent } from './views';
 
 const routes: Routes = [
   {
@@ -16,8 +16,12 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'call',
-    component: CallComponent
+    path: 'room',
+    component: RoomComponent
+  },
+  {
+    path: 'room/:roomId',
+    component: RoomComponent
   },
   {
     path: '',
@@ -28,7 +32,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
